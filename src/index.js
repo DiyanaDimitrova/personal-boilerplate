@@ -1,5 +1,5 @@
 import "./index.scss";
-import React from "react";
+import React, { StrictMode } from "react";
 import ReactDOM from "react-dom";
 import { AppRouter } from "./router";
 import * as serviceWorker from "./serviceWorker";
@@ -7,9 +7,11 @@ import { Provider } from "react-redux";
 import configureStore from "./store";
 
 ReactDOM.render(
-  <Provider store={configureStore()}>
-    <AppRouter />
-  </Provider>,
+  <StrictMode>
+    <Provider store={configureStore()}>
+        <AppRouter />
+    </Provider>
+  </StrictMode>,
   document.getElementById("root")
 );
 

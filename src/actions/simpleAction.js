@@ -29,7 +29,6 @@ import {
   };
   
   export const getAction = payload => {
-    console.log('api', `${apiUrl}?${queryString.stringify(payload)}`)
     return dispatch => {
       dispatch(fetchLoading());
       return axios
