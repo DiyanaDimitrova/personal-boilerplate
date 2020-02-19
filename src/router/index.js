@@ -14,13 +14,13 @@ const routes = [
 export const AppRouter = () => (
   <BrowserRouter>
     <ErrorBoundary>
-        <Suspense fallback={<div>Loading...</div>}>
-            <Switch>
-            {routes.map(route => (
-                <Route key={route.path} path={route.path} component={route.component} />
-            ))}
-            </Switch>
-        </Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Switch>
+          {routes.map(route => (
+            <Route key={route.path} path={route.path} component={route.component} />
+          ))}
+        </Switch>
+      </Suspense>
     </ErrorBoundary>
   </BrowserRouter>
 );

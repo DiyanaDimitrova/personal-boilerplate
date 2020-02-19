@@ -13,7 +13,7 @@ describe("Simple Component", () => {
   it("simulate click", () => {
     const mockHandler = jest.fn();
     const wrapper = shallow(
-        <Simple clickHandler={mockHandler} />
+      <Simple clickHandler={mockHandler} />
     );
     wrapper.simulate('click');
     expect(mockHandler).toHaveBeenCalled();

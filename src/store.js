@@ -14,6 +14,6 @@ const composedMiddlewares = compose(
   applyMiddleware(thunk),
   ...middlewares
 );
-export default function configureStore(initialState = { simple: {data: 'Simple App', loading: false, error: null }}) {
+export default function configureStore(initialState = { simple: { data: 'Simple App', loading: false, error: null } }) {
   return createStore(rootReducer, initialState, composedMiddlewares);
 }

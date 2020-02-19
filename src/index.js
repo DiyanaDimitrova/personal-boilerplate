@@ -9,7 +9,7 @@ import configureStore from "./store";
 ReactDOM.render(
   <StrictMode>
     <Provider store={configureStore()}>
-        <AppRouter />
+      <AppRouter />
     </Provider>
   </StrictMode>,
   document.getElementById("root")

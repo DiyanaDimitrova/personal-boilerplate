@@ -19,7 +19,7 @@ class Page extends Component {
     super(props);
 
     this.state = {
-        someData: 0 
+      someData: 0
     };
     this.bindMethods();
   }
@@ -35,8 +35,8 @@ class Page extends Component {
    * clickHandler
    */
   clickHandler(e) {
-    this.setState({someData: SOME_CONSTANT});
-    this.props.getAction({someData: SOME_CONSTANT});
+    this.setState({ someData: SOME_CONSTANT });
+    this.props.getAction({ someData: SOME_CONSTANT });
   }
 
   /**
